@@ -10,7 +10,8 @@ class ControllerMain extends GetxController {
 
   //Changing to Mode
   ThemeMode get theme => Get.isDarkMode ? ThemeMode.dark : ThemeMode.light;
-  bool isDarkTheme = false;
+
+  bool isDarkTheme = !ThemeHelper().theme;
 
   //method to SwitchThem dark and lightMode
   void switchTheme(ThemeData newMode) {

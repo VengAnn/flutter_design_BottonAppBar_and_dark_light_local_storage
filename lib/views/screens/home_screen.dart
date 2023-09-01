@@ -29,7 +29,6 @@ class HomeScreen extends StatelessWidget {
                 onChanged: (newMode) {
                   controller.isDarkTheme = newMode;
                   //
-
                   controller.switchTheme(
                       newMode ? ThemeData.light() : ThemeData.dark());
                   // Save the new theme mode to the local storage
@@ -56,7 +55,7 @@ class HomeScreen extends StatelessWidget {
       ),
       //BottomNavigationbar
       bottomNavigationBar: BottomAppBar(
-        // notchMargin: 50,
+        notchMargin: 20,
         child: Container(
           padding: const EdgeInsets.all(8.0),
           child: GetBuilder(
